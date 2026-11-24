@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 350" role="img" aria-labelledby="title desc">
+  <title id="title">GPU 曲面和手写 BRG 的绘制流程</title>
+  <desc id="desc">上方是 Compute Shader 计算位置写入 GPU 缓冲区，再由程序化绘制读取。下方是 CPU 或 Jobs 剔除，BRG 使用可见名单和已有的 GPU 实例数据提交绘制。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M1 1 8 5 1 9" fill="none" stroke="#526579" stroke-width="1.5"/>
+    </marker>
+  </defs>
+  <rect width="900" height="350" rx="20" fill="#f3f6fb"/>
+  <g font-family="system-ui,'Microsoft YaHei',sans-serif" fill="#142237">
+    <text x="26" y="43" font-size="24" font-weight="700">Compute Shader 曲面</text>
+    <text x="26" y="204" font-size="24" font-weight="700">手写 BatchRendererGroup</text>
+    <g fill="#dcecf9">
+      <rect x="26" y="63" width="244" height="86" rx="12"/>
+      <rect x="332" y="63" width="236" height="86" rx="12"/>
+      <rect x="630" y="63" width="244" height="86" rx="12"/>
+    </g>
+    <g fill="#e0efe5">
+      <rect x="26" y="224" width="244" height="86" rx="12"/>
+      <rect x="332" y="224" width="236" height="86" rx="12"/>
+      <rect x="630" y="224" width="244" height="86" rx="12"/>
+    </g>
+    <path d="M278 106h44 M576 106h44 M278 267h44 M576 267h44" fill="none" stroke="#526579" stroke-width="2" marker-end="url(#arrow)"/>
+    <g text-anchor="middle" font-size="19" font-weight="650">
+      <text x="148" y="97">GPU 计算位置</text>
+      <text x="450" y="97">GraphicsBuffer</text>
+      <text x="752" y="97">程序化实例绘制</text>
+      <text x="148" y="258">CPU / Jobs 剔除</text>
+      <text x="450" y="258">可见实例名单</text>
+      <text x="752" y="258">BRG 提交绘制</text>
+    </g>
+    <g text-anchor="middle" font-size="15" fill="#344b64">
+      <text x="148" y="124">Compute Shader 并行执行</text>
+      <text x="450" y="124">存放这一帧的方块位置</text>
+      <text x="752" y="124">顶点着色器读取位置</text>
+      <text x="148" y="285">根据镜头和实例边界筛选</text>
+      <text x="450" y="285">记录这次要画的编号</text>
+      <text x="752" y="285">GPU 读取已有实例数据</text>
+    </g>
+  </g>
+</svg>
