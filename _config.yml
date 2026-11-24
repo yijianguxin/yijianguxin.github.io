@@ -1,0 +1,6 @@
+title: "学习笔记"
+description: "记录 Unity、游戏开发和 Catlike Coding 的学习过程。"
+lang: zh-CN
+theme: minima
+header_pages:
+  - notes.md
