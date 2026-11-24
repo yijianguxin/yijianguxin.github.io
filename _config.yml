@@ -14,12 +14,12 @@ timezone: Asia/Hong_Kong
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Shirui 的开发笔记
+title: 一剑孤心
 
-tagline: Unity、图形学与游戏开发
+tagline: Unity 学习、游戏开发与随笔
 
 description: >- # used by seo meta and the atom feed
-  记录 Unity、游戏开发和 Catlike Coding 的学习过程。
+  记录 Unity 学习和游戏开发的过程，也写一些随笔。
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -34,7 +34,7 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: yijianguxin
+  name: Three Zhang
   email:
   fediverse_handle: # fill in your fediverse handle. E.g. "@username@domain.com"
   links:
@@ -98,7 +98,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "https://avatars.githubusercontent.com/u/7289639?v=4"
+avatar: /assets/img/avatar.webp
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
