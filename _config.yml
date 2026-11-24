@@ -14,9 +14,9 @@ timezone: Asia/Hong_Kong
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: 学习笔记
+title: Shirui 的开发笔记
 
-tagline: 记录 Unity 与游戏开发
+tagline: Unity、图形学与游戏开发
 
 description: >- # used by seo meta and the atom feed
   记录 Unity、游戏开发和 Catlike Coding 的学习过程。
@@ -98,7 +98,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: "https://avatars.githubusercontent.com/u/7289639?v=4"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
